@@ -35,14 +35,5 @@
                 '<b>Без пробелов:</b> ' + withoutSpaces + '<br>' +
                 '<b>Количество слов:</b> ' + wordsCount;
         });
-
-        textArea.addEventListener('keyup', function(){
-            changeButtonsStatus(textArea.value.length > 0);
-        });
-
-        resetButton.addEventListener('click', function(){
-            textArea.value = '';
-            changeButtonsStatus(false);
-        });
     });
 }());
